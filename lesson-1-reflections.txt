@@ -1,0 +1,26 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+-i can use -u to make it more obvious
+- it show "-" at the beginnig of the line that wasn't in the first file i compare/or has changed
+- it show "+" at the beginning of the line that wasn't in the second file i compared to/ or has changed
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+-i can see whhat changes I made and can get back to older version
+- I can see what was the process of changing / evolving of certn part of codes???
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+- in git I have a way of affecting when to save/= what to save, In google i can also choose when to save but it also save when I do not intend to
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+-Google docs is not inteded for the same userbase as git hence no version control of mutliple-version control
+How can you use the commands git log and git diff to view the history of files?
+-git clone
+-#to see all commits
+	git log
+-#to compare two commits
+	git diff [commit_old] [commit_new]
+	git diff f19cb1b80fe27e938e4d72770ca0a42f25e99ecc b0678b161fcf74467ed3a63110557e3d6229cfa6
+	git diff --stat  f19cb1b80fe27e938e4d72770ca0a42f25e99ecc b0678b161fcf74467ed3a63110557e3d6229cfa6
+-to switch to different version of repository use :
+	git checkout [commit_uuid]
+-return to newest version with
+	git checkout [uuid_showed_by_git_log_at_the_top]  
+
+How might using version control make you more confident to make changes that could break something?
+- I am always able to get back and switch to previous version if I save regularly after each logical step
